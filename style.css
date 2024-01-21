@@ -1,0 +1,66 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  font-family: 'Work Sans', sans-serif;
+}
+
+body {
+  background-color: hsl(275, 100%, 97%);
+  background-image: url(assets/images/background-pattern-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: hsl(292, 42%, 14%);
+}
+
+img {
+  display: inline;
+}
+h1 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1rem;
+  width: 65%;
+}
+
+p {
+  color: hsl(292, 16%, 49%);
+}
+.faq {
+  display: flex;
+  gap: 1rem;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+.container {
+  margin: 4rem 1.5rem;
+  border-radius: 1rem;
+  background-color: hsl(0, 0%, 100%);
+  padding: 2.5rem 1.5rem;
+}
+
+@media (min-width: 1440px) {
+  body {
+    background-color: hsl(275, 100%, 97%);
+    background-image: url(assets/images/background-pattern-desktop.svg);
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    width: 44%;
+    margin-top: 5rem;
+  }
+
+  .plus h4:hover {
+    color: hsl(292, 16%, 49%);
+    cursor: pointer;
+  }
+}
